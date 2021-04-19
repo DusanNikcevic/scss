@@ -1,0 +1,149 @@
+//.select__option--is-focused{
+//  background-color: $background!important;
+//  transition: all 2s ease-in-out;
+//}
+
+.customDropdown {
+    min-width: 200px;
+    font-size: 13px;
+
+    label {
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+        // font-family: $fontContent;
+        background: $white;
+        transition: all 0.2s ease-in-out;
+        z-index: 2;
+        display: block;
+        cursor: text;
+        padding: 0.5rem 0.5rem;
+        color: $theme-main-7;
+        pointer-events: none;
+        line-height: 1;
+        &.top {
+            font-size: 1.2rem;
+            top: 0;
+            color: $theme-main-7;
+        }
+        &.disabled {
+            font-size: 1.2rem;
+            top: 0;
+            background: white;
+            color: $light-3;
+        }
+    }
+    &.noValue {
+        .select__single-value {
+            opacity: 0;
+        }
+    }
+}
+.select__control {
+    width: 100%;
+    cursor: pointer !important;
+    min-height: 45px !important;
+    font-size: 13px;
+    border: 1px solid $light-9;
+}
+
+.multiple {
+    .select__control {
+        width: 100%;
+        min-height: 45px;
+        height: auto;
+        // background-color: $light-9;
+    }
+    label {
+        position: absolute;
+        top: 0%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        background: $white;
+        transition: all 0.2s ease-in-out;
+        z-index: 2;
+        display: block;
+        cursor: text;
+        padding: 0.5rem 0.5rem;
+        color: $theme-main-7;
+        pointer-events: none;
+        line-height: 1;
+        &.top {
+            font-size: 1.2rem;
+            top: 0;
+            color: $theme-main-7;
+        }
+        &.disabled {
+            font-size: 1.2rem;
+            top: 0;
+            background: white;
+            color: $light-3;
+        }
+    }
+}
+
+.select__multi-value {
+    background-color: transparent !important;
+}
+
+.select__placeholder {
+    color: #8f9298 !important;
+}
+
+.select__indicator-separator {
+    display: none !important;
+}
+
+.select__option--is-selected {
+    background-color: #ededed !important;
+    color: $dark-5 !important;
+    font-size: 13px;
+}
+.css-1n7v3ny-option {
+    background-color: #f6f6f6 !important;
+}
+.select__control--is-focused {
+    border: 1px solid #8f9298 !important;
+
+    box-shadow: none !important;
+    outline: none;
+    background-color: white !important;
+    font-size: 13px;
+}
+
+.select__control--is-disabled {
+    opacity: 0.7;
+    background-color: transparent !important;
+    border: 1px solid $light-3 !important;
+    .select__indicator-separator {
+        background-color: $light-3 !important;
+    }
+    .select__placeholder {
+        color: $light-3 !important;
+    }
+}
+.filter {
+    .select__control,
+    .select__control--is-focused,
+    .select__option--is-selected {
+        border-left: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        border-radius: 0px !important;
+    }
+}
+
+.select__menu {
+    z-index: 99 !important;
+}
+
+.select__single-value {
+    font-size: 13px;
+}
+
+.select__option {
+    font-size: 14px !important;
+}
